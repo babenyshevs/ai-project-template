@@ -1,74 +1,157 @@
-# AI Project Requirements
+# <*Project-name*>
+
+# AI Project Requirements Mind Map
 
 ## Project Overview
-Provide a brief overview of the AI project, including its purpose, objectives, and expected outcomes.
+- Purpose
+- Business objectives - metrics
+- Expected Outcomes
 
 ## Stakeholders
-Identify the key stakeholders involved in the project, such as project sponsors, users, developers, and any other relevant parties.
+- Project Sponsors (budget)
+- Users 
+- Developers
+- Other Relevant Parties
 
 ## Functional Requirements
-List the functional requirements that describe the core capabilities and features of the AI system. Each requirement should be clear, concise, and measurable. Examples include:
+- Data Collection and Preprocessing
+  - Data sources
+  - Data access
 
-1. **Data Collection and Preprocessing**
-   - The system should be able to collect and preprocess data from various sources, including structured and unstructured data.
+- Model Training and Evaluation
+  - Justify modelling methodology - what kind of task is to be solved
+  - Justofy model architecture - how it will be solved (target definition, etc.)
+  - Experiments tracking
 
-2. **Model Training and Evaluation**
-   - The system should train and evaluate machine learning models using appropriate algorithms and techniques.
-   - The system should support multiple model architectures and allow for easy experimentation.
+- Inference and Prediction
+  - Batch vs. Realtime
+  - Output destination
 
-3. **Inference and Prediction**
-   - The system should be able to make accurate predictions and provide real-time insights based on the trained models.
-   - The system should support high-speed processing for quick responses.
+- Integration and Deployment
+  - Integrate with existing systems and applications
+  - CI/CD
 
-4. **Integration and Deployment**
-   - The system should integrate seamlessly with existing systems and applications, allowing for easy deployment.
-   - The system should provide APIs or other interfaces for smooth communication with external systems.
-
-5. **Monitoring and Maintenance**
-   - The system should include monitoring and logging mechanisms to track its performance and identify issues.
-   - The system should support regular updates and maintenance to improve its accuracy and efficiency.m
+- Monitoring and Maintenance
+  - Include monitoring and logging mechanisms
+  - Track performance and identify issues
+  - Support regular updates and maintenance
 
 ## Non-Functional Requirements
-Specify the non-functional requirements that define the quality attributes and constraints of the AI system. These requirements may include:
+- Performance
+  - Large volumes of data
+  - Processing time limits
+  - Minimal latency (for real-time applications)
 
-1. **Performance**
-   - The system should be able to handle large volumes of data and process requests within specified time limits.
-   - The system should have minimal latency for real-time applications.
+- Quality metrics
+  - Desired level of quality (prediction accuracy)
+  - Continuous improvement (if aplicable)
 
-2. **Accuracy**
-   - The system should achieve a certain level of accuracy in its predictions, as defined by the project stakeholders.
-   - The system should continuously strive to improve its accuracy over time.
+- Security
+  - Data confidentiality and integrity
+  - Access control
 
-3. **Security**
-   - The system should ensure the confidentiality and integrity of the data it processes.
-   - The system should have appropriate access controls and encryption mechanisms to protect sensitive information.
+- Scalability
+  - Handle increasing data and users
+  - Horizontal and vertical scaling
 
-4. **Scalability**
-   - The system should be designed to handle increasing amounts of data and users without significant degradation in performance.
-   - The system should support horizontal and vertical scaling as required.
-
-5. **Usability**
-   - The system should have a user-friendly interface, allowing users to interact with it easily and understand the output.
-   - The system should provide appropriate documentation and support for users.
+- Usability
+  - Interface (if aplicable)
+  - Documentation
 
 ## Constraints and Assumptions
-Specify any constraints or assumptions that impact the design or implementation of the AI system. For example:
-
-- The system will be developed using Python programming language.
-- The system will be deployed on cloud infrastructure (AWS, Azure, etc.).
-- The system will require access to historical data for training and evaluation.
+- Programming language
+- Infrastructure (premise, cloud, mix)
+- Access to data
 
 ## Dependencies
-Identify any external dependencies that the AI system relies on, such as specific libraries, frameworks, or data sources.
+- External libraries, frameworks, or data sources
 
 ## Acceptance Criteria
-Define the criteria that must be met for the project to be considered successfully completed. These criteria should be measurable and aligned with the project objectives.
+- Measurable criteria for project completion
 
 ## Deliverables
-Specify the expected deliverables of the AI project, which may include trained models, deployment scripts, documentation, and any other relevant artifacts.
+- Trained models
+- Deployment scripts
+- Documentation and artifacts
 
 ## Timeline and Milestones
-Outline the project timeline, including major milestones and deliverable due dates. This will help manage project expectations and ensure timely progress.
+- Project timeline with major milestones
 
 ## Risks and Mitigation
-Identify potential risks and challenges that may arise during the project and propose strategies to mitigate or address them.
+- Identified risks and strategies for mitigation
+
+
+## Code & structure
+### Directory structure
+------------
+
+The directory structure of your new project looks like this: 
+
+```
+├── README.md               <- The top-level README for developers using this project.
+├── data
+│   ├── external            <- Data from third party sources.
+│   ├── interim             <- Intermediate data that has been transformed.
+│   ├── processed           <- The final, canonical data sets for modeling.
+│   └── raw                 <- The original, immutable data dump.
+│
+├── logs                    <- Log API requests (e.g. input, response, stdout, stderr information)
+│
+├── docs                    <- A default Sphinx project; see sphinx-doc.org for details
+│
+├── models                  <- Trained and serialized models, model predictions, or model summaries
+│
+├── notebooks               <- Jupyter notebooks. Naming convention is a number (for ordering),
+│                              the creator's initials, and a short `-` delimited description, e.g.
+│                              `1.0-sa-initial-data-exploration`.
+│
+├── references              <- Data dictionaries, manuals, and all other explanatory materials.
+│
+├── reports                 <- Generated analysis as HTML, PDF, LaTeX, etc.
+│   └── figures             <- Generated graphics and figures to be used in reporting
+│
+├── requirements.txt        <- The requirements file for reproducing the analysis environment, e.g.
+│                              generated with `pip freeze > requirements.txt`
+│
+├── src                     <- Source code for use in this project.
+│   ├── __init__.py     <- Makes src a Python module
+│   │
+│   ├── config.py       <- Configuration file for some global variables
+│   │
+│   ├── data            <- Scripts to download or generate data
+│   │   └── make_dataset.py
+│   │
+│   ├── features        <- Scripts to turn raw data into features for modeling
+│   │   └── build_features.py
+│   │
+│   ├── models          <- Scripts to train models and then use trained models to make
+│   │   │                 predictions
+│   │   ├── predict.py
+│   │   └── train.py
+│   │
+│   └── visualization   <- Scripts to create exploratory and results oriented visualizations
+│           └── visualize.py
+│
+├── tests                   <- Test scripts for unit testing (e.g. using pytest), 
+│                              performance and load testing of the API
+│
+├── api.py                  <- Flask API script
+│
+└── .gitignore
+```
+
+### Installing development requirements
+------------
+
+    pip install -r requirements.txt
+
+### Running the tests
+------------
+
+    pytest tests
+
+### Build documentation using Sphinx
+------------
+
+    cd docs/
+    make html
