@@ -3,14 +3,20 @@
 # AI Project Requirements Mind Map
 
 ## Project Overview
-- Purpose
-- Business objectives - metrics
+- Purpose - make all parties happy :)
+- Business objectives - **metrics** (=acceptance criteria)
 - Expected Outcomes
+  - PoC
+  - MVP
+  - Full scale solution
 
 ## Stakeholders
 - Project Sponsors (budget)
 - Users 
 - Developers
+  - *Data engineer*
+  - *Data analyst*
+  - *Data scientist / ML Engineer / MLOps engineer*
 - Other Relevant Parties
 
 ## Functional Requirements
@@ -18,10 +24,14 @@
   - Data sources
   - Data access
 
-- Model Training and Evaluation
+- Model Training and Validation
   - Justify modelling methodology - what kind of task is to be solved
-  - Justofy model architecture - how it will be solved (target definition, etc.)
+  - Justify model architecture - how it will be solved (target definition, etc.)
   - Experiments tracking
+
+- Quality metrics
+  - Desired level of quality (prediction accuracy)
+  - Continuous improvement (if aplicable)
 
 - Inference and Prediction
   - Batch vs. Realtime
@@ -42,10 +52,6 @@
   - Processing time limits
   - Minimal latency (for real-time applications)
 
-- Quality metrics
-  - Desired level of quality (prediction accuracy)
-  - Continuous improvement (if aplicable)
-
 - Security
   - Data confidentiality and integrity
   - Access control
@@ -57,11 +63,18 @@
 - Usability
   - Interface (if aplicable)
   - Documentation
+    - Git README
+    - Confluence
 
 ## Constraints and Assumptions
 - Programming language
+  - Python
+  - Spark
+  - SQL
 - Infrastructure (premise, cloud, mix)
 - Access to data
+  - Classification
+  - User roles
 
 ## Dependencies
 - External libraries, frameworks, or data sources
@@ -70,9 +83,13 @@
 - Measurable criteria for project completion
 
 ## Deliverables
-- Trained models
-- Deployment scripts
-- Documentation and artifacts
+- 1. Documentation
+- 2. Artifacts
+      - Trained models
+      - Deployment scripts
+    - DB & Tables
+    - Reports
+    - WebApp
 
 ## Timeline and Milestones
 - Project timeline with major milestones
@@ -99,7 +116,7 @@ The directory structure of your new project looks like this:
 │
 ├── docs                    <- A default Sphinx project; see sphinx-doc.org for details
 │
-├── models                  <- Trained and serialized models, model predictions, or model summaries
+├── models                  <- Trained and serialized models, model artifacts, or model summaries
 │
 ├── notebooks               <- Jupyter notebooks. Naming convention is a number (for ordering),
 │                              the creator's initials, and a short `-` delimited description, e.g.
