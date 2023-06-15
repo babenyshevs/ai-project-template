@@ -180,6 +180,29 @@ The directory structure of your new project looks like this:
 ```
 
 ### Backup
+#### Q&A
+- Q: What this activity seek to achieve (i.e. MLOps seminar, etc)?
+  - A: More AI use cases in production
+    - Q: how many there are now?
+  - A: Faster delivery?
+    - Q: how long it takes now?
+    - Q: how fast we want it to be?
+  - A. Better quality if AI use cases
+    - Q: what is the quality now?
+    - Q: how to we measure it?
+    - Q: does it need to be higher?
+- Q: What are success criteria (how to measure success)?
+  - A:
+- Q: Till when?
+  - A:
+
+#### Next steps:
+- [ ] Step 1
+- [ ] Step 2
+- [ ] ...
+- [ ] Step N
+
+
 #### Installing development requirements
 ------------
 
