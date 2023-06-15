@@ -3,9 +3,26 @@
 # AI Project Requirements Mind Map
 
 ## Project Overview
-- Purpose - make all parties happy :)
-- Business objectives - **metrics** (=acceptance criteria)
-- Expected Outcomes
+- Business value:
+  - *Helpful questions to ask/answer:*
+    - *What are business KPIs?*
+    - *How to let business-customer shine as a result of the project?*
+    - *Bottle-necks:*
+      - *"We want to be data-driven" often means: "We already made a decision and now want you to confirm it with data"*
+      - *AI is not needed or business ment by it something alse, e.g.:*
+        - *fix business process*
+        - *solve data engineering task*
+        - *solve data analytics task*
+    - *Good candidates for applying AI:*
+      - *Repetitive tasks*
+      - *Tasks involving processing of large ammount of data*
+      - *Tasks which are currently solved only partially*
+      - *Task which business fails to deliver properly for long time*
+      - *Tasks on which budget reduction is expected*
+- Business objectives:
+  - Business metric *- very important!*
+  - AI team transforms business metric into a technical evaluation (used for development and evaluation)
+- Expected Outcomes (options):
   - PoC
   - MVP
   - Full scale solution
@@ -23,6 +40,12 @@
 - Data Collection and Preprocessing
   - Data sources
   - Data access
+  - Data requiremnts:
+    - Types
+    - Formats
+    - Ammount (expecially if subsample is provided)
+    - Stability (devset should not differ from live data)
+    - Quality (missings, migtrating schema, etc)
 
 - Model Training and Validation
   - Justify modelling methodology - what kind of task is to be solved
