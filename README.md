@@ -47,11 +47,6 @@
     - Stability (devset should not differ from live data)
     - Quality (missings, migtrating schema, etc)
 
-- Model Training and Validation
-  - Justify modelling methodology - what kind of task is to be solved
-  - Justify model architecture - how it will be solved (target definition, etc.)
-  - Experiments tracking
-
 - Quality metrics
   - Desired level of quality (prediction accuracy)
   - Continuous improvement (if aplicable)
@@ -64,16 +59,22 @@
   - Integrate with existing systems and applications
   - CI/CD
 
-- Monitoring and Maintenance
-  - Include monitoring and logging mechanisms
-  - Track performance and identify issues
-  - Support regular updates and maintenance
-
-## Non-Functional Requirements
 - Performance
   - Large volumes of data
   - Processing time limits
   - Minimal latency (for real-time applications)
+
+- Usability
+  - Interface (if aplicable)
+  - Documentation
+    - Git README
+    - Confluence
+
+## Non-Functional Requirements
+- Model Training and Validation
+  - Justify modelling methodology - what kind of task is to be solved
+  - Justify model architecture - how it will be solved (target definition, etc.)
+  - Experiments tracking
 
 - Security
   - Data confidentiality and integrity
@@ -83,12 +84,10 @@
   - Handle increasing data and users
   - Horizontal and vertical scaling
 
-- Usability
-  - Interface (if aplicable)
-  - Documentation
-    - Git README
-    - Confluence
-
+- Monitoring and Maintenance
+  - Include monitoring and logging mechanisms
+  - Track performance and identify issues
+  - Support regular updates and maintenance
 ## Constraints and Assumptions
 - Programming language
   - Python
@@ -180,17 +179,18 @@ The directory structure of your new project looks like this:
 └── .gitignore
 ```
 
-### Installing development requirements
+### Backup
+#### Installing development requirements
 ------------
 
     pip install -r requirements.txt
 
-### Running the tests
+#### Running the tests
 ------------
 
     pytest tests
 
-### Build documentation using Sphinx
+#### Build documentation using Sphinx
 ------------
 
     cd docs/
