@@ -197,8 +197,8 @@ The directory structure of your new project looks like this:
   - A:
 
 #### Next steps:
-- [ ] Step 1
-- [ ] Step 2
+- [ ] Implement this template in Production use cases (Team Digimon, S2P Hub)
+- [ ] Present template in Data Science communitys
 - [ ] ...
 - [ ] Step N
 
